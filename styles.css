@@ -1,5 +1,7 @@
 :root {
-    --width: 100vw;
+    --vwwidth: 100vw;
+    --x: 0.666;
+    --width: var(--vwwidth) * var(--x);
 }
 
 body {
@@ -209,11 +211,12 @@ h1 {
     }
 
     .mobile-img {
+        position: relative;
+        top: 70px;
         object-fit: contain;
-        height: 456px;
-        width: 100%;
+        object-position: top;
+        /* width: 100%; */
         /* height: auto; */
-        object-position: bottom;
     }
 
 }
