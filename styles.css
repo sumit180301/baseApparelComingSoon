@@ -210,7 +210,7 @@ h1 {
 
     .mobile-img {
         position: relative;
-        top: 20px;
+        top: 70px;
         object-fit: contain;
         object-position: top;
         /* width: 100%; */
