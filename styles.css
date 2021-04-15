@@ -84,7 +84,7 @@ h1 {
 .form {
     margin-top: 40px;
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     /* width: 400px; */
 }
 
@@ -203,7 +203,7 @@ h1 {
     }
 
     .form {
-        margin-bottom: 80px;
+        margin-bottom: 20px;
     }
 
     .image {
