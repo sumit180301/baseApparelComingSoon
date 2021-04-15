@@ -84,7 +84,7 @@ h1 {
 .form {
     margin-top: 40px;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     /* width: 400px; */
 }
 
@@ -147,10 +147,12 @@ h1 {
 .successful {
     display: unset;
     color: hsl(0, 87%, 79%);
+    margin-bottom:40px;
 }
 
 .display {
     display: unset;
+    margin-bottom:40px;
 }
 
 @media (max-width:1020px) {
