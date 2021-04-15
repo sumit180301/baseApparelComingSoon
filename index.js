@@ -1,3 +1,15 @@
+window.addEventListener("resize", handleMobileImg);
+window.addEventListener("load", handleMobileImg);
+
+function handleMobileImg(){
+    if(window.innerWidth<(800)){
+        document.getElementsByClassName('mobile-img')[0].src="./images/hero-mobile.jpg";
+    } else {
+        document.getElementsByClassName('mobile-img')[0].src="";
+    }
+}
+// document.getElementsByClassName('mobile-img')[0].src="./images/hero-mobile.jpg";
+
 function handleInputFocus(){
     document.getElementsByClassName('form-input')[0].value='';
     document.getElementsByClassName('form-input')[0].classList.remove('form-input-onError');
