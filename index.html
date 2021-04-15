@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <section class="content">
+    <div class="written-content">
+      <div class="logoDiv">
+        <img class="logo" src="./images/logo.svg" alt="">
+      </div>
+      <span class="we_are">We're</span>
+      <h1>coming soon</h1>
+
+      <p class="greeting_para">Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form class="form">
+        <input class="form-input" type="text" onfocusin=handleInputFocus() placeholder="Email Address" >
+        <img class="errorLogo" src="./images/icon-error.svg" alt="">
+        <button class="form-button"  type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+      </form>
+      <p class="error"></p>
+    </div>
+  </section>
+  <section class="image">
+    <img src="./images/hero-desktop.jpg" alt="">
+  </section>
+  <script src="./index.js"></script>
+</body>
+</html>

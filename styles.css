@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    font-size: 14.5px;
+    scroll-behavior: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    margin: 0;
+}
+
+.content {
+    background-image: url('./images/bg-pattern-desktop.svg');
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-size: cover;
+    width: 52%;
+
+}
+
+.image {
+    /* width: 40%; */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.written-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.logo {
+    object-fit: contain;
+    width: 140px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    width: 142px;
+    margin-bottom: 99.792px;
+    margin-top: 19.792px;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 5px;
+}
+
+.we_are {
+    font-size: 3.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: -45px;
+    color: hsl(0, 36%, 70%);
+}
+
+.greeting_para {
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+
+.form {
+    margin-top: 40px;
+    display: flex;
+    margin-bottom: 20px;
+    /* width: 400px; */
+}
+
+.form-input {
+    padding: 15px;
+    border: 2px solid hsl(0, 35%, 81%);
+    color: hsl(0, 30%, 51%);
+    width: 380px;
+    border-radius: 40px;
+    outline: none;
+}
+
+.form-input-onError {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+.errorLogo {
+    display: none;
+    object-fit: contain;
+    height: 21px;
+    width: 21px;
+    margin-left: -110px;
+    margin-right: 89px;
+    margin-top: 15px;
+}
+
+/* .display {
+    display: unset;
+} */
+
+.form-input:focus {
+    border: solid hsl(0, 59%, 76%);
+}
+
+.form-button {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-left: -50px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 7px 10px 3px rgb(235, 221, 221);
+}
+
+.form-button:hover {
+    background-image: linear-gradient(135deg, hsl(0, 79%, 96%), hsl(0, 94%, 81%));
+    box-shadow: 1px 7px 13px 5px rgb(226, 182, 182);
+
+
+}
+
+.error {
+    display: none;
+    color: hsl(0, 93%, 68%);
+}
+
+.successful {
+    display: unset;
+    color: hsl(0, 87%, 79%);
+}
+
+.display {
+    display: unset;
+}
+
+@media (max-width:1020px) {
+
+    .content {
+        width: 90%;
+    }
+
+    .written-content {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width:875px) {
+    body {
+        flex-direction: column-reverse;
+    }
+
+    .logoDiv {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 50px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        background-color: rgb(255, 249, 249);
+    }
+
+    .logo {
+        margin-left: 40px;
+        object-fit: contain;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .we_are {
+        margin-top: 40px;
+    }
+
+    .greeting_para {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        margin-bottom: 80px;
+    }
+
+    .image img {
+        /* height: auto; */
+        width: 100%;
+        object-fit: contain;
+    }
+
+}
